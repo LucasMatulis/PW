@@ -32,6 +32,7 @@ function apagar(){
 
   title2.innerHTML="";
   lista.innerHTML="";
+  title.innerHTML="Digite o seu nome";
 
 }
 
