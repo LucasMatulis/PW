@@ -6,13 +6,22 @@ import { BrowserRouter,
 //
 import Home from './pages/Home';
 import Cadastro from './pages/Cadastro';
+import ContaCorrente from "./pages/ContaCorrente";
+import SobreNos from "./pages/SobreNos";
+import Erro from "./pages/Erro";
+import Header from "./components/Header";
 //criar componente de roteamento
 function RouterApp(){
     return(
     <BrowserRouter>
+    <Header/>
     <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/cadastro" element={<Cadastro/>}/>
+        <Route path="/contacorrente" element={<ContaCorrente/>}/>
+        <Route path="/sobrenos" element={<SobreNos/>}/>
+        <Route path="*" element={<Erro/>}/>
+
 
     </Routes>
     </BrowserRouter>

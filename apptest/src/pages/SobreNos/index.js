@@ -1,15 +1,14 @@
 import { Link } from "react-router-dom";
 
-function Home(){
+function SobreNos(){
 
 
 
     return(
         <div>
-            <h1>Pagina Home</h1>
-
+            <h1>Sobre nós</h1>
         </div>
     )
 }
 
-export default Home;
+export default SobreNos;

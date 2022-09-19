@@ -1,15 +1,14 @@
 import { Link } from "react-router-dom";
 
-function Home(){
+function ContaCorrente(){
 
 
 
     return(
         <div>
-            <h1>Pagina Home</h1>
-
+            <h1>Conta Corrente</h1>
         </div>
     )
 }
 
-export default Home;
+export default ContaCorrente;
