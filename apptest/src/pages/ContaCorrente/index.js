@@ -6,7 +6,7 @@ function ContaCorrente(){
 
     return(
         <div>
-            <h1>Conta Corrente</h1>
+            <h1 align='center'>Conta Corrente</h1>
         </div>
     )
 }

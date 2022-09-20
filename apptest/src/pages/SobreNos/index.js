@@ -6,7 +6,7 @@ function SobreNos(){
 
     return(
         <div>
-            <h1>Sobre nós</h1>
+            <h1 align='center'>Sobre nós</h1>
         </div>
     )
 }

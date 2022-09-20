@@ -36,7 +36,7 @@ function Cadastro(){
 
     return(
         <div>
-            <h1>Pagina Cadastro</h1>
+            <h1 align='center'>Pagina Cadastro</h1>
             <form onSubmit={cadastrarCliente}> 
             
             <label> Nome do cliente: </label>

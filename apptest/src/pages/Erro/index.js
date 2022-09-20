@@ -6,7 +6,7 @@ function Erro(){
 
     return(
         <div>
-            <h1>Erro ao entrar</h1>
+            <h1 align='center'>Erro ao entrar</h1>
         </div>
     )
 }

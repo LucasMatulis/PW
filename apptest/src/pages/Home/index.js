@@ -6,7 +6,7 @@ function Home(){
 
     return(
         <div>
-            <h1>Pagina Home</h1>
+            <h1 align='center'>Pagina Home</h1>
 
         </div>
     )
