@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import {useState} from 'react';
+import './cadstyle.css';
 
 function Cadastro(){
 
@@ -35,18 +36,18 @@ function Cadastro(){
 
 
     return(
-        <div>
-            <h1 align='center'>Pagina Cadastro</h1>
+        <div className="cadastro">
+            <h1 >Pagina Cadastro</h1>
             <form onSubmit={cadastrarCliente}> 
             
-            <label> Nome do cliente: </label>
+            <p> Nome do cliente: </p>
             <input placeholder="Informe o nome do cliente"  valeu={nome} 
             onChange={(evento)=>setNome(evento.target.value)}>
 
             </input>
             <br></br>
 
-            <label> Numero do CPF: </label>
+            <p> Numero do CPF: </p>
             <input placeholder="Informe o CPF do cliente"  valeu={cpf} 
             onChange={(evento)=>setcpf(evento.target.value)}>
 
@@ -54,12 +55,13 @@ function Cadastro(){
             </input>
             <br></br>
 
-            <label> Endereco do cliente: </label>
+            <p> Endereco do cliente: </p>
             <input placeholder="Informe o endereco do cliente"  valeu={endereco} 
             onChange={(evento)=>setendereco(evento.target.value)}>
 
             </input>
 
+            <br></br>
             <br></br>
             
             <button type="submit">Cadastrar</button>
@@ -67,7 +69,7 @@ function Cadastro(){
             </form>
             <br></br>
 
-            <div>
+            <div id = "results">
 
                 <span>Nome do cliente: {dadosCliente.nomeCliente} </span>
                 <br></br>
