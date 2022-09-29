@@ -1,27 +1,40 @@
 header {
     width: 100%;
     height: 100%;
-    background-color: pink;
-    color : blue;
+    background-color: rgb(105, 21, 21);
+    color : rgb(255, 255, 255);
 
+
+ 
     display: flex;
     align-items: center;
     justify-content: space-around;
     padding: 0 24px;
 
+    font-family:Verdana, Geneva, Tahoma, sans-serif
 
 
 }
 
 header a{
 
-    color: white;
+    color: rgb(163, 150, 150);
     font-size: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
 
 }
 header a +a{
 
     margin-left: 10px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
 
 
 }
+
+selector.elementor-sticky--effects{
+    background-color: rgba(158,253,69,0.5)!important
+ }
+ 
+ selector{
+    transition: background-color 4s ease !important;
+ }

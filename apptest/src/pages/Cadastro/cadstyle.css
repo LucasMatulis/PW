@@ -15,8 +15,48 @@
   }
   
   .cadastro{
+
+    text-align: center;
+    margin: 90px;
+    align-items: center;
+    color: black;
+    font-size: 16px;
+  background: #e4e4e4;
+  border-radius: 20px;
+  box-shadow: 0px 10px 40px black;
+
+  width:500px;
+  height:500px;
+  border:2px solid black;
+  padding: 60px;
+
+ font-size: 20px;
+  position: absolute;
+  top: 10%; /* posiciona na metade da tela */
+  margin-top: 40px; /* e retrocede metade da altura */
+  left: 40%; /* posiciona na metade da tela */
+  margin-left: -50px;
+    
+     
+  }
+
+
+    
+ .results{
+  
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  position: absolute;
+  top: 50%; /* posiciona na metade da tela */
+  margin-top: -25px; /* e retrocede metade da altura */
+  left: 50%; /* posiciona na metade da tela */
+  margin-left: -150px; /* e retrocede metade da largura */
+  
+ 
     
   }
+
   
   form {
     position: absolute;
@@ -25,11 +65,12 @@
     width: 300px;
     height: 400px;
   }
+
   
  
  
   button[type="submit"] {
-    background: #660fc8;
+    background: #860303;
     color: white;
     border-radius: 30px;
     width: 100%;
@@ -39,4 +80,5 @@
     font-size: 15px;
     margin-top: 40px;
     cursor: pointer;
+    text-align: center;
   }

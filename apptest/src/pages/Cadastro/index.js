@@ -38,14 +38,14 @@ function Cadastro(){
     return(
         <div className="cadastro">
             <h1 >Pagina Cadastro</h1>
-            <form onSubmit={cadastrarCliente}> 
+            <form onSubmit={cadastrarCliente} className="results"> 
             
             <p> Nome do cliente: </p>
             <input placeholder="Informe o nome do cliente"  valeu={nome} 
             onChange={(evento)=>setNome(evento.target.value)}>
 
             </input>
-            <br></br>
+    
 
             <p> Numero do CPF: </p>
             <input placeholder="Informe o CPF do cliente"  valeu={cpf} 
@@ -53,7 +53,7 @@ function Cadastro(){
 
             
             </input>
-            <br></br>
+           
 
             <p> Endereco do cliente: </p>
             <input placeholder="Informe o endereco do cliente"  valeu={endereco} 
@@ -61,15 +61,14 @@ function Cadastro(){
 
             </input>
 
-            <br></br>
-            <br></br>
+
             
             <button type="submit">Cadastrar</button>
             
             </form>
             <br></br>
 
-            <div id = "results">
+            <div id= "results">
 
                 <span>Nome do cliente: {dadosCliente.nomeCliente} </span>
                 <br></br>
