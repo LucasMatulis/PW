@@ -34,7 +34,7 @@
   font-size: 20px;
   position: absolute;
   top: 20%; /* posiciona na metade da tela */
-  margin-top: -25px; /* e retrocede metade da altura */
+  margin-top: 25px; /* e retrocede metade da altura */
   left: 37%; /* posiciona na metade da tela */
   margin-left: -150px; /* e retrocede metade da largura */
   
@@ -45,7 +45,7 @@
   
   form {
     position: absolute;
-    margin-top: 80px;
+    margin-top: 750px;
     transition: .5s;
     width: 300px;
     height: 400px;

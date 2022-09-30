@@ -12,7 +12,7 @@
     font-size: 20px;
     position: absolute;
     top: 50%; /* posiciona na metade da tela */
-    margin-top: -20px; /* e retrocede metade da altura */
+    margin-top: 390px; /* e retrocede metade da altura */
     left: 280%; /* posiciona na metade da tela */
     margin-left: -250px; /* e retrocede metade da largura */
 
@@ -34,7 +34,7 @@
 
  h2{
     text-align: center;
-    margin-top: -20px; /* e retrocede metade da altura */
+    margin-top: 370px; /* e retrocede metade da altura */
     left: 130%; /* posiciona na metade da tela */
     margin-left: 700px; /* e retrocede metade da largura */
 
@@ -47,7 +47,7 @@
     position: absolute;
     width:300%;
     top: -10%;
-    margin-top: -10px; /* e retrocede metade da altura */
+    margin-top: 340px; /* e retrocede metade da altura */
     left: 100%; /* posiciona na metade da tela */
     margin-left: -50px; /* e retrocede metade da largura */
     text-align: center;
@@ -63,7 +63,7 @@
     text-align: center;
     width:100%;
     top: -3%;
-    margin-top: -0px; /* e retrocede metade da altura */
+    margin-top: 400px; /* e retrocede metade da altura */
     left: 100%; /* posiciona na metade da tela */
     margin-left: 250px;
 
@@ -90,7 +90,7 @@ h2 {
     font-size: 20px;
     position: absolute;
     top: 30%; /* posiciona na metade da tela */
-    margin-top: -20px; /* e retrocede metade da altura */
+    margin-top: 400px; /* e retrocede metade da altura */
     left: 280%; /* posiciona na metade da tela */
     margin-left: -250px; /* e retrocede metade da largura */
 
@@ -104,7 +104,7 @@ h2 {
     font-size: 20px;
     position: absolute;
     top: 65%; /* posiciona na metade da tela */
-    margin-top: -20px; /* e retrocede metade da altura */
+    margin-top: 400px; /* e retrocede metade da altura */
     left: 190%; /* posiciona na metade da tela */
     margin-left: -250px; /* e retrocede metade da largura */
 
@@ -116,7 +116,7 @@ h2 {
     font-size: 20px;
     position: absolute;
     top: 65%; /* posiciona na metade da tela */
-    margin-top: -20px; /* e retrocede metade da altura */
+    margin-top: 400px; /* e retrocede metade da altura */
     left: 383%; /* posiciona na metade da tela */
     margin-left: -250px; /* e retrocede metade da largura */
 
