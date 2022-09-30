@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import {useState} from 'react';
+import './stylefinanciamento.css';
 
 function Financiamento(){
 
@@ -22,20 +23,20 @@ function Financiamento(){
 return(
 
     
-        <div>
-            <h1 align='center'>Simulação de Financiamento</h1>
+        <div class="geral">
+            <h1>Simulação de Financiamento</h1>
 
             <p>Nome do cliente: xxxxxxxxxxxxxxxxxx</p>
 
             <form onSubmit={financiar}>
 
-            <p> Valor solicitado: </p>
-            <input placeholder="xxxxxxxxx"  
+            <p className="valorsolicitado"> Valor solicitado: </p>
+            <input className="valorinput" placeholder="xxxxxxxxx"  
             onChange={(evento)=>setValorCliente(evento.target.value)}></input>
 
             <br></br>
 
-            <button type="submit">Calcular Financiamento</button>
+            <button class='bt'  type="submit">Calcular Financiamento</button>
 
    
 
@@ -48,7 +49,7 @@ return(
             <br></br>
 
 
-            <div id="centerParcelas">
+            <div className="centerParcelas">
 
             <span>Valor solicitado : {valor}</span>
             <br></br>
@@ -60,7 +61,7 @@ return(
 
 
 
-            <div id="leftParcelas">
+            <div class="leftParcelas">
 
             <span>2x Parcelas de : {parseInt(valor)/2} </span>
             <br></br>
@@ -72,7 +73,7 @@ return(
             </div>
             <br></br>
 
-            <div id="rightTotalPago">
+            <div className="rightTotalPago">
 
             <span>Total Pago : {valor} </span>
             <br></br>

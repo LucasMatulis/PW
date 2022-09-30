@@ -1,5 +1,8 @@
+
 import { Link } from "react-router-dom";
-import style from './style.css';
+import './style.css';
+import Img from "./CV.png";
+
 
 
 
@@ -9,10 +12,14 @@ function Header(){
 
 
     return(
+        
       
         <header>
-            Bem vindo a nossa empresa
-            <img scr="./Header/CV.png"/>
+            
+        <img class="logoheader" src={Img}/>
+           Seja  Bem vindo ao Cartão Vermelho
+            
+            
         <div className="menu">
             <br/> <Link to ='/'>Home</Link> 
              <Link to ='/cadastro'>Cadastro</Link> 
