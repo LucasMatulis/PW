@@ -2,3 +2,10 @@ body{
   
     background-color: hsla(0, 0%, 98%, 1);
 }
+
+.fund{
+    margin-top: -400px;
+    width: 1400px;
+    height: 700px;
+    align-items: center;
+}

@@ -1,17 +1,18 @@
-h2{
 
-    text-align: center;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: brown;
+.rei{
+    height: 500px;
+    width: 500px;
 }
 
 p{
-    text-align: center;
-    align-items: center;
+    text-align: right;
+    align-items: right;
+    margin-left: 500px;
+    margin-top: -380px;
     display: flex;
-    font-size: large;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
    color: brown;
+   font-size: 30px;
 }
 
 sobrenos{

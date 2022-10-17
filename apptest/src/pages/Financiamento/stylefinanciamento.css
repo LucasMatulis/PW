@@ -1,0 +1,130 @@
+.geral{
+ 
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 34px;
+    
+}
+
+.centerParcelas{
+   
+    font-size: 20px;
+    position: absolute;
+    top: 50%; /* posiciona na metade da tela */
+    margin-top: 390px; /* e retrocede metade da altura */
+    left: 280%; /* posiciona na metade da tela */
+    margin-left: -250px; /* e retrocede metade da largura */
+
+}
+
+.bt {
+    
+    border: 0;
+    padding: 10px;
+    width: 200px;
+    height: 50px;
+    display: inline-block;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-left: 550px; 
+  
+  }
+
+ h2{
+    text-align: center;
+    margin-top: 370px; /* e retrocede metade da altura */
+    left: 130%; /* posiciona na metade da tela */
+    margin-left: 700px; /* e retrocede metade da largura */
+
+}
+
+.valorsolicitado{
+
+    display: flex;
+    text-align: center;
+    position: absolute;
+    width:300%;
+    top: -10%;
+    margin-top: 340px; /* e retrocede metade da altura */
+    left: 100%; /* posiciona na metade da tela */
+    margin-left: -50px; /* e retrocede metade da largura */
+    text-align: center;
+
+
+}
+
+.valorinput{
+
+    display: flex;
+    text-align: center;
+    position: absolute;
+    text-align: center;
+    width:100%;
+    top: -3%;
+    margin-top: 400px; /* e retrocede metade da altura */
+    left: 100%; /* posiciona na metade da tela */
+    margin-left: 250px;
+
+}
+
+ p {
+    display: flex;
+    flex-direction: column;
+    left: 50%; /* posiciona na metade da tela */
+    justify-content: center;
+    text-align: center;
+}
+
+h2 { 
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+
+
+.calculofinanciamento{
+
+    font-size: 20px;
+    position: absolute;
+    top: 30%; /* posiciona na metade da tela */
+    margin-top: 400px; /* e retrocede metade da altura */
+    left: 280%; /* posiciona na metade da tela */
+    margin-left: -250px; /* e retrocede metade da largura */
+
+}
+
+
+
+.leftParcelas{
+
+    
+    font-size: 20px;
+    position: absolute;
+    top: 65%; /* posiciona na metade da tela */
+    margin-top: 400px; /* e retrocede metade da altura */
+    left: 190%; /* posiciona na metade da tela */
+    margin-left: -250px; /* e retrocede metade da largura */
+
+}
+
+.rightTotalPago{
+
+    
+    font-size: 20px;
+    position: absolute;
+    top: 65%; /* posiciona na metade da tela */
+    margin-top: 400px; /* e retrocede metade da altura */
+    left: 383%; /* posiciona na metade da tela */
+    margin-left: -250px; /* e retrocede metade da largura */
+
+}
+
+.p{
+
+    font-size: 20px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}

@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Style } from './stylesobrenos.css';
+import Imge from "./rei.jpg";
 
 function SobreNos(){
 
@@ -7,12 +8,14 @@ function SobreNos(){
 
     return(
         <div id="sobrenos">
+
             <h1 align='center'>Sobre nós</h1>
+
+            <img class="rei" src={Imge} aling="left"/>
 
             <br>
             </br>
 
-            <h2>SEJA BEM VINDX</h2>
 
             <br>
             </br>

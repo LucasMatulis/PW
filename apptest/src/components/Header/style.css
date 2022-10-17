@@ -16,9 +16,19 @@ header {
 
 }
 
+.logoheader{
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    width: 90px;
+    text-decoration: none;
+    transition: 0.3s;
+    background-image: url(../Header/CV.png);
+
+}
+
 header a{
 
-    color: rgb(163, 150, 150);
+    color: rgb(255, 255, 255);
     font-size: 20px;
     font-family:Verdana, Geneva, Tahoma, sans-serif
 
@@ -38,3 +48,4 @@ selector.elementor-sticky--effects{
  selector{
     transition: background-color 4s ease !important;
  }
+
