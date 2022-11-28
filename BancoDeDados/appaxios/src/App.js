@@ -7,7 +7,7 @@ function App() {
   const [user, setUser]=useState();
   useEffect(()=>{
     api
-    .post("/users/ler/",
+    .post("/users",
       {
      nmuser:nmuser
       })

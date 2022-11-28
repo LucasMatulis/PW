@@ -1,0 +1,26 @@
+import prismaClient from '../../prisma';
+
+
+interface UserRequest {
+    nmuser: string;
+}
+class LerUserService {
+    async execute({ nmuser}: UserRequest) {
+        //vamos verificar se enviou Usename
+        if (!nmuser) {
+            throw new Error("Nome do usuario deve ser informado")
+        }
+        //verifica usuario ja foi cadastrado anteriormente
+        const userAlreadyExists = await prismaClient.user.findFirst({
+            where: {
+                nomeUser: nmuser
+            }
+        })
+        if (!userAlreadyExists){
+            throw new Error("usuario  existe no DB User")
+        }
+    
+        return nmuser;
+    }
+}
+export { LerUserService }
