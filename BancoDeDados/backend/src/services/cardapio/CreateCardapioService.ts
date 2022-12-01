@@ -2,33 +2,29 @@ import prismaClient from '../../prisma';
 
 
 interface UserRequest {
-    nmuser: string;
-    senha: string;
-    perfil: number;
+    nomePrato: string;
 }
-class CreateUserService {
-    async execute({ nmuser, senha, perfil }: UserRequest) {
+class CreateCardapioService {
+    async execute({ nomePrato}: UserRequest) {
         //vamos verificar se enviou Usename
-        if (!nmuser) {
+        if (!nomePrato) {
             throw new Error("Nome do usuario deve ser informado")
         }
         //verifica usuario ja foi cadastrado anteriormente
-        const userAlreadyExists = await prismaClient.user.findFirst({
+        const userAlreadyExists = await prismaClient.cardapio.findFirst({
             where: {
-                nomeUser: nmuser
+                nomePrato:nomePrato
             }
         })
         if (userAlreadyExists){
             throw new Error("usuario já existe no DB User")
         }
-        const user = await prismaClient.user.create({
+        const user = await prismaClient.cardapio.create({
             data:{
-                nomeUser:nmuser,
-                senha:senha,
-                perfilUser:perfil
+               nomePrato:nomePrato
             }
         })
         return user;
     }
 }
-export { CreateUserService }
+export { CreateCardapioService }

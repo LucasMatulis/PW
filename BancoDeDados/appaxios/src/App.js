@@ -2,14 +2,16 @@ import React, {useEffect, useState} from 'react';
 import api from './services/api.js';
 
 function App() {
-  const nmuser="Adalberto Piotto"
+  var nmuser="Lucas"
+  var id="1a76cf8f-5418-4bdc-8c52-ce84dce542cf"
              
   const [user, setUser]=useState();
   useEffect(()=>{
     api
-    .post("/users",
+    .post("/users/ler",
       {
-     nmuser:nmuser
+     nmuser:nmuser,
+     id:id
       })
     .then((response)=>{setUser(response.data)
       console.log(response.data);})
@@ -21,8 +23,8 @@ function App() {
  
   return (
 <div className="App">
-  <p>Usuario:{user?.id}</p>
-  <p>Nome:{user?.nomeUser}</p>
+  <p>Usuario:{id}</p>
+  <p>Nome:{nmuser}</p>
 </div>
   );
 }

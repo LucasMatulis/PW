@@ -11,12 +11,36 @@ datasource db {
 }
 //criar um migratio: yarn prisma migrate dev
 model User {
-  id String @id @default(uuid())
-  nomeUser String
-  senha String
-  perfilUser String
-  criacao DateTime? @default(now())
-  alteracao DateTime? @default(now())
+  idUser        Int    @id @unique @default(autoincrement())
+  nomeUser      String
+  senha         String
+  perfilUser    Int
+  criacao_at    DateTime?  @default(now())
+  alteracao_at  DateTime?  @default(now())
+  comanda       Comanda[]
+  
   @@map("users")
+}
+
+
+model Comanda {
+  idComanda     Int       @id @unique @default(autoincrement())
+  numeroMesa    Int
+  status        Boolean   @default(false)
+  pedido      String?
+  user          User      @relation(fields: [idUser], references: [idUser])
+  idUser        Int
+  criacao_at    DateTime? @default(now())
+  alteracao_at  DateTime? @default(now())
+  @@map("comandas")
+}
+
+
+model Cardapio {
+  idPrato     Int       @id @unique @default(autoincrement())
+  nomePrato      String?
+  criacao_at    DateTime? @default(now())
+  alteracao_at  DateTime? @default(now())
+  @@map("cardapio")
 }
 
